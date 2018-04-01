@@ -1,2 +1,2 @@
 # 3DFaceReconstructionFromMultipleImages
-Bachelor  thesis
+
