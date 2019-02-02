@@ -1,6 +1,6 @@
 # 3DFaceReconstructionFromMultipleImages
-
-It was my bachelor thesis. Main goal is to construct someone's 3D face model from their multiple photos.
+##Description
+It was my bachelor thesis. Main goal was to construct someone's 3D face model from their multiple photos.
 > This was so hard to implement because of variations of photo and hardware limits. 
 ___
 Photos have 
@@ -10,12 +10,34 @@ Photos have
 4. Contains multiple person
 ___
 
-Used Surrey's Univercity's face model as normal model. [You can find here]: https://cvssp.org/faceweb/3dmm/facemodels/
+Used Surrey's Univercity's face model as normal model. [You can find here]:https://cvssp.org/faceweb/3dmm/facemodels/
 
-__
+___
 Technologies used :
 
 Python
 1. OpenCV - Image processing /Denoising , Cropping , Sampling , Feature Extraction etc/
 2. DLib   - Face pose estimation
 3. MenpoFit - Fitting my model to normal model
+
+
+## Usage
+
+```python
+from 3DModelConstructor import 3DModelConstructor
+
+#Create an instance
+constrctr = new 3DModelConstructor()
+
+#Copy your photo paths here
+photos = [
+...
+imagePathsHere
+...
+
+]
+
+#And it will produce 3D model where the script.
+constrctr.construct(photos);
+
+```
